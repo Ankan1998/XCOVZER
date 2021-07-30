@@ -1,4 +1,10 @@
 import tensorflow as tf
+
+# 1: Covid infected
+# 2: Viral Pneumonia
+# 3: Lung Opacity
+# 4: Normal
+
 def model_fn():
 # Used Sequential
     model=tf.keras.Sequential()
@@ -11,7 +17,7 @@ def model_fn():
     model.add(tf.keras.layers.Flatten())
     model.add(tf.keras.layers.Dense(128, activation='relu'))
     model.add(tf.keras.layers.Dropout(.1, input_shape=(128,)))
-    model.add(tf.keras.layers.Dense(3, activation='softmax'))
+    model.add(tf.keras.layers.Dense(4, activation='softmax'))
 
     print(model.summary())
 
