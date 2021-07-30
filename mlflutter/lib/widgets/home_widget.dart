@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mlflutter/widgets/prediction.dart';
 
 class HomeWidget extends StatefulWidget {
   //const HomeWidget({ Key? key }) : super(key: key);
@@ -33,12 +34,16 @@ class _HomeWidgetState extends State<HomeWidget> {
               elevation: 4,
               shadowColor: Colors.black,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0),
-                
+                borderRadius: BorderRadius.circular(10.0),              
               ),
             ),
           ),
-        )
+        ),
+        SizedBox(
+          height:15
+        ),
+        Prediction()
+
 
       ],
     );
