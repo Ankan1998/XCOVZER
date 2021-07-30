@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mlflutter/themes.dart';
+import 'package:mlflutter/widgets/home_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   //const HomeScreen({ Key? key }) : super(key: key);
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'XcR',
+          'XCovZer',
           style: MyTheme.kAppTitle,
         ),
         elevation: 0,
@@ -46,11 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     topRight: Radius.circular(30),
                   )
                 ),
-                child: Container(
-                  // child: Text(
-                  //   "hiiii"
-                  // )
-                ),
+                child: HomeWidget()
               ),
             ),
           ],
