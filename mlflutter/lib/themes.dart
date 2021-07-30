@@ -3,13 +3,17 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MyTheme {
   MyTheme._();
-  static Color kPrimaryColor = Color(0xffD32F2F);
+  static Color kPrimaryColor = Colors.tealAccent;
   static Color kPrimaryColorVariant = Color(0xff686795);
   static Color kAccentColor = Color(0xffffa000);
   static Color kAccentColorVariant = Color(0xffF7A3A2);
   static Color kUnreadChatBG = Color(0xffEE1D1D);
 
-  static final TextStyle kAppTitle = GoogleFonts.satisfy(fontSize: 36);
+  static final TextStyle kAppTitle = GoogleFonts.tangerine(
+    fontSize: 36,
+    fontWeight: FontWeight.w900,
+    letterSpacing: 4
+    );
 
   static final TextStyle heading2 = TextStyle(
     color: Color(0xff686795),
