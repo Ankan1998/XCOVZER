@@ -52,7 +52,7 @@ class _HomeWidgetState extends State<HomeWidget> {
             OutlinedButton(
               onPressed: () {},
               child: Icon(
-                Icons.camera,
+                Icons.camera_alt,
                 color: Colors.teal[600]
               ),
               style: OutlinedButton.styleFrom(
