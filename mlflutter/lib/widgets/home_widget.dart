@@ -14,11 +14,11 @@ class _HomeWidgetState extends State<HomeWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height:50),
+        SizedBox(height:MediaQuery.of(context).size.height*0.05),
         Center(
           child: SizedBox(
-            width: 300,
-            height: 300,
+            width: MediaQuery.of(context).size.width*0.8,
+            height: MediaQuery.of(context).size.height*0.45,
             child: Card(
               child: Center(
                 child: Text(
@@ -40,7 +40,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           ),
         ),
         SizedBox(
-          height:15
+          height:MediaQuery.of(context).size.height*0.02
         ),
         Prediction()
 

@@ -27,15 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             SizedBox(
-              height:5.0
-            ),
-            // Container(
-            //   width: MediaQuery.of(context).size.width*1.0,
-            //   height: MediaQuery.of(context).size.height*0.15,
-            //   child: ChatHeader(),
-            // ),
-            SizedBox(
-              height:10.0
+              height: MediaQuery.of(context).size.height*0.01
             ),
             Expanded(
               child: Container(
