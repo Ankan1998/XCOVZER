@@ -42,7 +42,40 @@ class _HomeWidgetState extends State<HomeWidget> {
         SizedBox(
           height:MediaQuery.of(context).size.height*0.02
         ),
-        Prediction()
+        Prediction(),
+        SizedBox(
+          height:MediaQuery.of(context).size.height*0.05
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            OutlinedButton(
+              onPressed: () {},
+              child: Icon(
+                Icons.camera,
+                color: Colors.teal[600]
+              ),
+              style: OutlinedButton.styleFrom(
+                shape: CircleBorder(),
+                padding: EdgeInsets.all(14),
+              ),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Icon(
+                Icons.image,
+                color: Colors.teal[600],
+              ),
+              style: OutlinedButton.styleFrom(
+                //backgroundColor: Colors.grey[200],
+                shape: CircleBorder(),
+                padding: EdgeInsets.all(14),
+              ),
+            ),
+
+
+          ]
+        )
 
 
       ],
