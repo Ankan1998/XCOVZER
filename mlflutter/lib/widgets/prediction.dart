@@ -14,70 +14,76 @@ class _PredictionState extends State<Prediction> {
     return Column(
       children: [
         Center(
-          child: Text(
-            'Prediction',
-            style: TextStyle(
-              color: Colors.green[400],
-              fontSize: 24,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 2,
-              fontStyle: FontStyle.italic,
-              fontFamily: GoogleFonts.kanit().fontFamily,
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              onPrimary: Colors.black87,
+              primary: Colors.grey[700],
             ),
-          ) ,
-        ),
-        Center(
-          child: Text(
-            'Covid 19: ',
-            style: TextStyle(
-              color: Colors.grey[700],
-              fontSize: 18,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 1,
-              fontStyle: FontStyle.italic,
-              fontFamily: GoogleFonts.comicNeue().fontFamily,
+            onPressed: () { },
+            child: Text(
+              'Prediction',
+                style: TextStyle(
+                color: Colors.grey[100],
+                fontSize: 28,
+                fontWeight: FontWeight.w100,
+                letterSpacing: 4,
+                fontFamily: GoogleFonts.satisfy().fontFamily,
+              ),
             ),
-          ) ,
+          )
         ),
-        Center(
-          child: Text(
-            'Lung Opacity: ',
-            style: TextStyle(
-              color: Colors.grey[700],
-              fontSize: 18,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 1,
-              fontStyle: FontStyle.italic,
-              fontFamily: GoogleFonts.comicNeue().fontFamily,
-            ),
-          ) ,
-        ),
-        Center(
-          child: Text(
-            'Viral Pneumonia: ',
-            style: TextStyle(
-              color: Colors.grey[700],
-              fontSize: 18,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 1,
-              fontStyle: FontStyle.italic,
-              fontFamily: GoogleFonts.comicNeue().fontFamily,
-            ),
-          ) ,
-        ),
-        Center(
-          child: Text(
-            'Normal: ',
-            style: TextStyle(
-              color: Colors.grey[700],
-              fontSize: 18,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 1,
-              fontStyle: FontStyle.italic,
-              fontFamily: GoogleFonts.comicNeue().fontFamily,
-            ),
-          ) ,
-        ),
+        // Center(
+        //   child: Text(
+        //     'Covid 19: ',
+        //     style: TextStyle(
+        //       color: Colors.grey[700],
+        //       fontSize: 18,
+        //       fontWeight: FontWeight.w300,
+        //       letterSpacing: 1,
+        //       fontStyle: FontStyle.italic,
+        //       fontFamily: GoogleFonts.comicNeue().fontFamily,
+        //     ),
+        //   ) ,
+        // ),
+        // Center(
+        //   child: Text(
+        //     'Lung Opacity: ',
+        //     style: TextStyle(
+        //       color: Colors.grey[700],
+        //       fontSize: 18,
+        //       fontWeight: FontWeight.w300,
+        //       letterSpacing: 1,
+        //       fontStyle: FontStyle.italic,
+        //       fontFamily: GoogleFonts.comicNeue().fontFamily,
+        //     ),
+        //   ) ,
+        // ),
+        // Center(
+        //   child: Text(
+        //     'Viral Pneumonia: ',
+        //     style: TextStyle(
+        //       color: Colors.grey[700],
+        //       fontSize: 18,
+        //       fontWeight: FontWeight.w300,
+        //       letterSpacing: 1,
+        //       fontStyle: FontStyle.italic,
+        //       fontFamily: GoogleFonts.comicNeue().fontFamily,
+        //     ),
+        //   ) ,
+        // ),
+        // Center(
+        //   child: Text(
+        //     'Normal: ',
+        //     style: TextStyle(
+        //       color: Colors.grey[700],
+        //       fontSize: 18,
+        //       fontWeight: FontWeight.w300,
+        //       letterSpacing: 1,
+        //       fontStyle: FontStyle.italic,
+        //       fontFamily: GoogleFonts.comicNeue().fontFamily,
+        //     ),
+        //   ) ,
+        // ),
       ]
     );
   }
