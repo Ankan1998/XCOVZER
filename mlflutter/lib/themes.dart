@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MyTheme {
   MyTheme._();
-  static Color kPrimaryColor = Colors.tealAccent;
+  static Color kPrimaryColor = Colors.teal[500];
   static Color kPrimaryColorVariant = Color(0xff686795);
   static Color kAccentColor = Color(0xffffa000);
   static Color kAccentColorVariant = Color(0xffF7A3A2);
