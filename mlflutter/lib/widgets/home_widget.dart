@@ -17,8 +17,8 @@ class _HomeWidgetState extends State<HomeWidget> {
         SizedBox(height:MediaQuery.of(context).size.height*0.05),
         Center(
           child: SizedBox(
-            width: MediaQuery.of(context).size.width*0.8,
-            height: MediaQuery.of(context).size.height*0.45,
+            width: MediaQuery.of(context).size.width*0.75,
+            height: MediaQuery.of(context).size.height*0.35,
             child: Card(
               child: Center(
                 child: Text(
@@ -42,10 +42,7 @@ class _HomeWidgetState extends State<HomeWidget> {
         SizedBox(
           height:MediaQuery.of(context).size.height*0.02
         ),
-        Prediction(),
-        SizedBox(
-          height:MediaQuery.of(context).size.height*0.05
-        ),
+
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -74,8 +71,17 @@ class _HomeWidgetState extends State<HomeWidget> {
             ),
 
 
+
+
           ]
-        )
+        ),
+        SizedBox(
+          height:MediaQuery.of(context).size.height*0.03
+        ),
+        Prediction(),
+        SizedBox(
+          height: MediaQuery.of(context).size.height*0.05
+        ),
 
 
       ],
