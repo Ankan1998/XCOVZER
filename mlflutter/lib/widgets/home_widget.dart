@@ -61,8 +61,6 @@ class _HomeWidgetState extends State<HomeWidget> {
             onPressed: () async {
               final pickedimage = await picker.pickImage(
                   source: ImageSource.camera,
-                  //maxWidth: MediaQuery.of(context).size.width * 1,
-                  //maxHeight: MediaQuery.of(context).size.width * 0.35,
                   imageQuality: 100);
               setState(() {
                 if (pickedimage != null) {
@@ -78,7 +76,17 @@ class _HomeWidgetState extends State<HomeWidget> {
             ),
           ),
           OutlinedButton(
-            onPressed: () {},
+            onPressed: () async {
+              final pickedimage = await picker.pickImage(
+                  source: ImageSource.gallery,
+                  imageQuality: 100);
+              setState(() {
+                if (pickedimage != null) {
+                  img_present = true;
+                  image = File(pickedimage.path);
+                }
+              });
+            },
             child: Icon(
               Icons.image,
               color: Colors.teal[600],
