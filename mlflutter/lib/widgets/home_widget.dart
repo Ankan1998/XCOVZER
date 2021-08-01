@@ -99,7 +99,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           ),
         ]),
         SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-        Prediction(),
+        if (img_present) ...[Prediction(imageClicked: image,)],
         SizedBox(height: MediaQuery.of(context).size.height * 0.05),
       ],
     );
