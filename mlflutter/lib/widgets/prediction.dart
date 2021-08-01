@@ -1,14 +1,23 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Prediction extends StatefulWidget {
-  //const Prediction({ Key? key }) : super(key: key);
+
+  const Prediction({Key key, this.imageClicked}) : super(key: key);
+  final File imageClicked;
+
+  
 
   @override
   _PredictionState createState() => _PredictionState();
 }
 
 class _PredictionState extends State<Prediction> {
+
+  File imageClicked;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,7 +28,9 @@ class _PredictionState extends State<Prediction> {
               onPrimary: Colors.black87,
               primary: Colors.grey[700],
             ),
-            onPressed: () { },
+            onPressed: () {
+              
+            },
             child: Text(
               'Prediction',
                 style: TextStyle(
