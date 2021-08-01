@@ -84,18 +84,20 @@ class _PredictionState extends State<Prediction> {
       SizedBox(height: MediaQuery.of(context).size.height * 0.04),
       if (prediction.entries.first.key != 'Normal')
         ... [
-          Text(
-            "There is " + "${prediction.entries.first.value*100}".substring(0, 5) + "%" + " you have ${prediction.entries.first.key}",
-            style: TextStyle(
-              color: Colors.teal[900],
-              fontFamily: GoogleFonts.merriweather().fontFamily,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 1,
-              fontSize: 16
-            )
-        )]
+          Center(
+            child: Text(
+              "There is " + "${prediction.entries.first.value*100}".substring(0, 5) + "%" + " you have ${prediction.entries.first.key}",
+              style: TextStyle(
+                color: Colors.teal[900],
+                fontFamily: GoogleFonts.merriweather().fontFamily,
+                fontWeight: FontWeight.w600,
+                letterSpacing: 1,
+                fontSize: 16
+              )
+        ),
+          )]
       else
-      ... [Text("You Lung is not Covid Infected")]
+      ... [Center(child: Text("You Lung is not Covid Infected"))]
     ]);
   }
 }
