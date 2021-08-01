@@ -45,55 +45,57 @@ class _PredictionState extends State<Prediction> {
       )),
       SizedBox(height: 20),
       Table(
-        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
-        border: TableBorder.all(
-          color: Colors.teal[800],
-          width:2,
-          
-          
-        ), 
-        columnWidths: {
-        0: FixedColumnWidth(MediaQuery.of(context).size.width * 0.4),
-        1: FixedColumnWidth(MediaQuery.of(context).size.width * 0.4)
-        }, 
-
-        children: [
-          for (var k in prediction.entries)
-            TableRow(
-              
-              children: [
+          defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+          border: TableBorder.all(
+            color: Colors.teal[800],
+            width: 2,
+          ),
+          columnWidths: {
+            0: FixedColumnWidth(MediaQuery.of(context).size.width * 0.4),
+            1: FixedColumnWidth(MediaQuery.of(context).size.width * 0.4)
+          },
+          children: [
+            for (var k in prediction.entries)
+              TableRow(children: [
                 Padding(
                   padding: const EdgeInsets.all(6.0),
                   child: Center(
                     child: Text(
                       k.key,
                       style: TextStyle(
-                        fontFamily: GoogleFonts.courgette().fontFamily,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16
-                      ),
-
+                          fontFamily: GoogleFonts.courgette().fontFamily,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(6.0),
                   child: Center(
-                    child: Text(
-                      "${k.value*100}".substring(0,5)+" %",
-                      style: TextStyle(
-                        fontFamily: GoogleFonts.courgette().fontFamily,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16
-                      )
-                    ),
+                    child: Text("${k.value * 100}".substring(0, 5) + " %",
+                        style: TextStyle(
+                            fontFamily: GoogleFonts.courgette().fontFamily,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16)),
                   ),
                 ),
-                //Text("${double.parse(k.value.toStringAsFixed(2))}"),
-              ]
+              ])
+          ]),
+      SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+      if (prediction.entries.first.key != 'Normal')
+        ... [
+          Text(
+            "There is " + "${prediction.entries.first.value*100}".substring(0, 5) + "%" + " you have ${prediction.entries.first.key}",
+            style: TextStyle(
+              color: Colors.teal[900],
+              fontFamily: GoogleFonts.merriweather().fontFamily,
+              fontWeight: FontWeight.w600,
+              letterSpacing: 1,
+              fontSize: 16
             )
-        ]
-      )
+        )]
+      else
+      ... [Text("You Lung is not Covid Infected")]
     ]);
   }
 }
