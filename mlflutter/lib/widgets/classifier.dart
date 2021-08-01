@@ -39,5 +39,6 @@ class Classifier {
         (key1, key2) => labeledProb[key2].compareTo(labeledProb[key1]));
     print(sorted);
     return sorted;
+
   }
 }
