@@ -13,8 +13,7 @@ class HomeWidget extends StatefulWidget {
 
 class _HomeWidgetState extends State<HomeWidget> {
   final picker = ImagePicker();
-  String pred;
-  String prob;
+
   File image;
   bool img_present = false;
   
@@ -32,22 +31,24 @@ class _HomeWidgetState extends State<HomeWidget> {
               height: MediaQuery.of(context).size.height * 0.35,
               child: Card(
                 
-                child: img_present
-                    ? Image.file(
-                      image,
-                      height: MediaQuery.of(context).size.height * 0.35,
-                      width: MediaQuery.of(context).size.width * 1,
-                      fit: BoxFit.fitWidth,
-                    )
-                    : Text(
-                        "Upload Image",
-                        style: TextStyle(
-                          color: Colors.grey[500],
-                          fontSize: 30,
-                          fontFamily:
-                              GoogleFonts.satisfy(fontSize: 20).fontFamily,
+                child: Center(
+                  child: img_present
+                      ? Image.file(
+                        image,
+                        height: MediaQuery.of(context).size.height * 0.35,
+                        width: MediaQuery.of(context).size.width * 1,
+                        fit: BoxFit.fitWidth,
+                      )
+                      : Text(
+                          "Upload Image",
+                          style: TextStyle(
+                            color: Colors.grey[500],
+                            fontSize: 30,
+                            fontFamily:
+                                GoogleFonts.satisfy(fontSize: 20).fontFamily,
+                          ),
                         ),
-                      ),
+                ),
                 elevation: 5,
                 shadowColor: Colors.black,
                 shape: RoundedRectangleBorder(
@@ -59,6 +60,7 @@ class _HomeWidgetState extends State<HomeWidget> {
               
               children: [
                 OutlinedButton(
+                  
                   onPressed: () async {
                     final pickedimage = await picker.pickImage(
                         source: ImageSource.camera,
@@ -70,10 +72,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                       }
                     });
                   },
-                  child: Icon(Icons.camera_alt, color: Colors.teal[600]),
+                  child: Icon(Icons.camera_alt, color: Colors.teal[700]),
                   style: OutlinedButton.styleFrom(
                     shape: CircleBorder(),
-                    padding: EdgeInsets.all(14),
+                    
+                    padding: EdgeInsets.all(15),
                   ),
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.1,),
@@ -91,12 +94,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                   },
                   child: Icon(
                     Icons.image,
-                    color: Colors.teal[600],
+                    color: Colors.teal[700],
                   ),
                   style: OutlinedButton.styleFrom(
                     //backgroundColor: Colors.grey[200],
                     shape: CircleBorder(),
-                    padding: EdgeInsets.all(14),
+                    padding: EdgeInsets.all(15),
                   ),
                 ),
               ]
