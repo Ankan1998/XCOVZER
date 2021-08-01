@@ -12,7 +12,7 @@ void main() {
         textTheme: GoogleFonts.merriweatherTextTheme(
           //Theme.of(context).textTheme,
         ),
-        primarySwatch: Colors.blue,
+        //primarySwatch: Colors.blue[400],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),
