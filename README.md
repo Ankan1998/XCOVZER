@@ -1,2 +1,21 @@
-# ML-with-Flutter
-Covid infected Lungs detection in mobile app
+# <p align= "center"> *XCOVZER*</p>
+### *OVERVIEW*
+This project is a step-forward to make Health care accessible to everyone in a Time and Cost effective way. <br>
+It also depicts the power of AI in Heathcare in upcoming years.<br>
+
+### *USAGE*
+It is a mobile App developed with flutter which distinguishes between different lungs disease based on chest Xray image. Model in the backened in developed with tensorflow and then converted to tflite for mobile environment.
+
+### *DEMO*
+
+
+
+
+### *TODO*
+* [x] Splash screen 
+* [x] Mobile UI
+* [ ] Login Screen
+* [x] Model constructed
+* [x] Model converted to tflite
+* [ ] Model retraining pipeline
+
