@@ -4,7 +4,7 @@ This project is a step-forward to make Health care accessible to everyone in a T
 It also depicts the power of AI in Heathcare in upcoming years.<br>
 
 ### *USAGE*
-It is a mobile App developed with flutter which distinguishes between different lungs disease based on chest Xray image. Model in the backened in developed with tensorflow and then converted to tflite for mobile environment.
+It is a mobile App developed with flutter which distinguishes between different lungs disease based on chest radiography image. Model in the backened in developed with tensorflow and then converted to tflite for mobile environment.
 
 ### *DEMO*
 
