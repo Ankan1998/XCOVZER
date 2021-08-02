@@ -9,10 +9,10 @@ class MyTheme {
   static Color kAccentColorVariant = Color(0xffF7A3A2);
   static Color kUnreadChatBG = Color(0xffEE1D1D);
 
-  static final TextStyle kAppTitle = GoogleFonts.tangerine(
+  static final TextStyle kAppTitle = GoogleFonts.lato(
     fontSize: 36,
-    fontWeight: FontWeight.w900,
-    letterSpacing: 4
+    fontWeight: FontWeight.w300,
+    letterSpacing: 2
     );
 
   static final TextStyle heading2 = TextStyle(
