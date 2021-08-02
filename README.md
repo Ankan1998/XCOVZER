@@ -17,4 +17,5 @@ It is a mobile App developed with flutter which distinguishes between different 
 * [x] Model constructed
 * [x] Model converted to tflite
 * [ ] Model retraining pipeline
+* [ ] Using pretrained model to improve accuracy by finetuning
 
