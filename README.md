@@ -22,4 +22,6 @@ v1 - https://drive.google.com/file/d/1OPTepxGhO8btTJUKfg4xBUuSY_8eoNuJ/view?usp=
 * [x] Model converted to tflite
 * [ ] Model retraining pipeline
 * [ ] Using pretrained model to improve accuracy by finetuning
+* [x] Released screenshot of the app
+* [ ] Release gif of working of the app
 
