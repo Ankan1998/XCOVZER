@@ -22,7 +22,7 @@ class Classifier {
         TensorBuffer.createFixedSize(<int>[1, 4], TfLiteType.float32);
     try {
       Interpreter interpreter =
-          await Interpreter.fromAsset('converted_model_tflite.tflite');
+          await Interpreter.fromAsset('converted_model_tflite_v2.tflite');
       print("loaded succesfully");
       interpreter.run(tensorImage.buffer, probBuffer.buffer);
     } catch (e) {
