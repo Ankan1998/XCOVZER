@@ -27,3 +27,6 @@ v1 - https://drive.google.com/file/d/1OPTepxGhO8btTJUKfg4xBUuSY_8eoNuJ/view?usp=
 * [x] Released screenshot of the app
 * [ ] Release gif of working of the app
 
+#### *NB*
+Version released 
+
