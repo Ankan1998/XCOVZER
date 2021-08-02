@@ -14,7 +14,6 @@ It is a mobile App developed with flutter which distinguishes between different 
 ### *TODO*
 * [x] Splash screen 
 * [x] Mobile UI
-* [ ] Login Screen
 * [x] Model constructed
 * [x] Model converted to tflite
 * [ ] Model retraining pipeline
