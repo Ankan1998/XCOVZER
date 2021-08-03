@@ -8,7 +8,7 @@ It is a mobile App developed with flutter which distinguishes between different 
 
 ### *APK*
 #### *Download*
-v1 - https://drive.google.com/file/d/1OPTepxGhO8btTJUKfg4xBUuSY_8eoNuJ/view?usp=sharing
+[V1 - DOWNLOAD](https://drive.google.com/file/d/1OPTepxGhO8btTJUKfg4xBUuSY_8eoNuJ/view?usp=sharing)
 
 ### *DEMO*
 <img align="left" src="https://user-images.githubusercontent.com/36896102/127893719-fdccffec-7505-446c-89b8-d8342f03d555.png" height="350" width="180"/>
@@ -28,5 +28,5 @@ v1 - https://drive.google.com/file/d/1OPTepxGhO8btTJUKfg4xBUuSY_8eoNuJ/view?usp=
 * [ ] Release gif of working of the app
 
 #### *NB*
-Version released 
+Version 1.0 released 
 
