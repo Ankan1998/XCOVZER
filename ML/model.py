@@ -1,9 +1,9 @@
 import tensorflow as tf
 
 # 1: Covid infected
-# 2: Viral Pneumonia
-# 3: Lung Opacity
-# 4: Normal
+# 2: Lung Opacity
+# 3: Normal
+# 4: Viral Pneumonia
 
 def model_fn():
 # Used Sequential
